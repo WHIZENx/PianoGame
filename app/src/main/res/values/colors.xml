@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#B9B9B9</color>
+    <color name="colorPrimaryDark">#00000000</color>
+    <color name="colorAccent">#110C12</color>
+
+    // Custom Color
+    <color name="backgroundcolor">#fcfcfc</color>
+    <color name="lightgray">#ededed</color>
+    <color name="deeppurple">#7c4dff</color>
+    <color name="yello">#ffb300</color>
+    <color name="green">#00bfa5</color>
+    <color name="darkblue">#23283a</color>
+    <color name="testcolorblue">#152b38</color>
+    <color name="pink">#fe104d</color>
+    <color name="colorSettings">#40000000</color>
+    <color name="colorClick">#abcdef</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="black">#000000</color>
+    <color name="gray">#E2E2E2</color>
+    <color name="white">#fff</color>
+    <color name="facebook">#4267b2</color>
+
+    <color name="select1">#2B2B2B</color>
+</resources>

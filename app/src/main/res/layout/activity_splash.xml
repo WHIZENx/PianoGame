@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubActivity.SplashActivity"
+    android:background="#696969"
+    android:id="@+id/rlayout_main">
+
+    <RelativeLayout
+        android:id="@+id/loading"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_centerInParent="true">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:background="@drawable/loading_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/loading">
+            </pl.droidsonroids.gif.GifImageView>
+
+        </RelativeLayout>
+
+        <ProgressBar
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:thicknessRatio="10"
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+        </ProgressBar>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_centerInParent="true"
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/logogame">
+    </ImageView>
+
+</RelativeLayout>

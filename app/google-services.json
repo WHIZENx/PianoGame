@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "56712638100",
+    "firebase_url": "https://piano-game-whizenx.firebaseio.com",
+    "project_id": "piano-game-whizenx",
+    "storage_bucket": "piano-game-whizenx.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56712638100:android:87406a48bbb98ba94cce81",
+        "android_client_info": {
+          "package_name": "com.cmu.project.pianogame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "56712638100-d369oobegiqbicr66t20j5sf1g68l6cc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cmu.project.pianogame",
+            "certificate_hash": "9270b3cf1527603c7472f1e52627dfa272f77271"
+          }
+        },
+        {
+          "client_id": "56712638100-vuoh54c92t1c28od5pdpmv87m1d9fqva.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7a7RQnQKtTgawo0w8GLiLWV9cjg5oQNk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "56712638100-vuoh54c92t1c28od5pdpmv87m1d9fqva.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

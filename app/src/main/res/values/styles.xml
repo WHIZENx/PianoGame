@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application themeList. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your themeList here. -->
+        <item name="colorPrimary">#B9B9B9</item>
+        <item name="colorPrimaryDark">#00000000</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="PauseDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/fade_in_activity</item>
+        <item name="android:windowExitAnimation">@anim/fade_out_activity</item>
+    </style>
+
+    <style name="DialogSlideAnim" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+
+</resources>

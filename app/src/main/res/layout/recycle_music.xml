@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:background="@drawable/list_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:src="@drawable/music"
+            android:scaleType="fitXY">
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/namemusic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Default Music"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_below="@id/namemusic"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/coin">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/pricemusic"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FREE"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold">
+                </TextView>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgmusic"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/correct"
+                android:layout_marginEnd="40dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:visibility="invisible">
+            </ImageView>
+
+            <ImageView
+                android:src="@drawable/use"
+                android:id="@+id/btnmusic"
+                android:layout_marginEnd="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="100dp"
+                android:layout_height="50dp">
+            </ImageView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

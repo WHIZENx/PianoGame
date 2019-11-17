@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity.Fragments.ShopFragments.GadgetsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never">
+
+            <RelativeLayout
+                android:id="@+id/energy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/enery_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FDED82">
+
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/img1"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/thunder">
+                    </ImageView>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="30dp"
+                        android:layout_alignStart="@id/img1"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="60dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Purchase Energy ⚡">
+                    </TextView>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:id="@+id/enerygy_one"
+                    android:layout_below="@id/enery_main"
+                    android:background="@drawable/list_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="center"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:padding="10dp"
+                        android:src="@drawable/thunder">
+                    </ImageView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1 Energy"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="20dp">
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:layout_below="@id/name"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/coin">
+                            </ImageView>
+
+                            <TextView
+                                android:id="@+id/price"
+                                android:layout_marginStart="10dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="15 Coins"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:textStyle="bold">
+                            </TextView>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:src="@drawable/buy"
+                            android:id="@+id/btn1"
+                            android:layout_marginEnd="20dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp">
+                        </ImageView>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:id="@+id/enerygy_five"
+                    android:layout_below="@id/enerygy_one"
+                    android:background="@drawable/list_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="center"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:padding="10dp"
+                        android:src="@drawable/five"
+                        android:scaleType="fitXY">
+                    </ImageView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/name2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5 Energy"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="20dp">
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:layout_below="@id/name2"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/coin">
+                            </ImageView>
+
+                            <TextView
+                                android:layout_marginStart="10dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="50 Coins"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:textStyle="bold">
+                            </TextView>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:src="@drawable/buy"
+                            android:id="@+id/btn2"
+                            android:layout_marginEnd="20dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp">
+                        </ImageView>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:id="@+id/enerygy_ten"
+                    android:layout_below="@id/enerygy_five"
+                    android:background="@drawable/list_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="center"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:padding="10dp"
+                        android:src="@drawable/ten"
+                        android:scaleType="fitXY">
+                    </ImageView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/name3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10 Energy"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="20dp">
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:layout_below="@id/name3"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/coin">
+                            </ImageView>
+
+                            <TextView
+                                android:layout_marginStart="10dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="90 Coins"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:textStyle="bold">
+                            </TextView>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:src="@drawable/buy"
+                            android:id="@+id/btn3"
+                            android:layout_marginEnd="20dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp">
+                        </ImageView>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:id="@+id/enerygy_fifteen"
+                    android:layout_below="@id/enerygy_ten"
+                    android:background="@drawable/list_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="center"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:padding="10dp"
+                        android:src="@drawable/fifteen"
+                        android:scaleType="fitXY">
+                    </ImageView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/name4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="15 Energy"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="20dp">
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:layout_below="@id/name4"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/coin">
+                            </ImageView>
+
+                            <TextView
+                                android:layout_marginStart="10dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="130 Coins"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:textStyle="bold">
+                            </TextView>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:src="@drawable/buy"
+                            android:id="@+id/btn4"
+                            android:layout_marginEnd="20dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp">
+                        </ImageView>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/enerygy_fifteen"
+                    android:id="@+id/love_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FD8282">
+
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/img2"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/love">
+                    </ImageView>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="30dp"
+                        android:layout_alignStart="@id/img2"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="60dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Purchase Love ❤">
+                    </TextView>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:id="@+id/love_one"
+                    android:layout_below="@id/love_main"
+                    android:background="@drawable/list_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="center"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:padding="10dp"
+                        android:src="@drawable/love">
+                    </ImageView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/namel1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1 Love"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="20dp">
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:layout_below="@id/namel1"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/coin">
+                            </ImageView>
+
+                            <TextView
+                                android:id="@+id/pricel1"
+                                android:layout_marginStart="10dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="50 Coins"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:textStyle="bold">
+                            </TextView>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:src="@drawable/buy"
+                            android:id="@+id/btnl1"
+                            android:layout_marginEnd="20dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp">
+                        </ImageView>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:id="@+id/love_five"
+                    android:layout_below="@id/love_one"
+                    android:background="@drawable/list_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="center"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:padding="10dp"
+                        android:src="@drawable/love_5">
+                    </ImageView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/namel2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5 Love"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="20dp">
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:layout_below="@id/namel2"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/coin">
+                            </ImageView>
+
+                            <TextView
+                                android:id="@+id/pricel2"
+                                android:layout_marginStart="10dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="200 Coins"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:textStyle="bold">
+                            </TextView>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:src="@drawable/buy"
+                            android:id="@+id/btnl2"
+                            android:layout_marginEnd="20dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp">
+                        </ImageView>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:id="@+id/love_ten"
+                    android:layout_below="@id/love_five"
+                    android:background="@drawable/list_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="center"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:padding="10dp"
+                        android:src="@drawable/love_10">
+                    </ImageView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/namel3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10 Love"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="20dp">
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:layout_below="@id/namel3"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/coin">
+                            </ImageView>
+
+                            <TextView
+                                android:id="@+id/pricel3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="1"
+                                android:text="350 Coins"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:textStyle="bold"></TextView>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:src="@drawable/buy"
+                            android:id="@+id/btnl3"
+                            android:layout_marginEnd="20dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp">
+                        </ImageView>
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>

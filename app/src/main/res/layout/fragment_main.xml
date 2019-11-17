@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity.Fragments.MainFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#35FFFFFF">
+
+            <RelativeLayout
+                android:id="@+id/loading"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_centerInParent="true">
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:background="@drawable/loading_bg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/loading">
+                    </pl.droidsonroids.gif.GifImageView>
+
+                </RelativeLayout>
+
+                <ProgressBar
+                    style="@style/Widget.AppCompat.ProgressBar"
+                    android:thicknessRatio="10"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp">
+                </ProgressBar>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lin"
+                android:visibility="invisible">
+
+                <LinearLayout
+                    android:id="@+id/first"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:id="@+id/thunder"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/thunder">
+                    </ImageView>
+
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="188dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/thunder"
+                        android:id="@+id/rev_bar"
+                        android:background="@drawable/stroke"
+                        android:layout_gravity="center"
+                        android:paddingBottom="1dp"
+                        android:paddingTop="1dp"
+                        android:paddingStart="1dp">
+
+                        <ProgressBar
+                            android:padding="1dp"
+                            android:id="@+id/progress_bar"
+                            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                            android:layout_width="202dp"
+                            android:layout_height="10dp"
+                            android:max="100"
+                            android:progress="0"
+                            android:progressDrawable="@drawable/progress_bar" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/text_energy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/rev_bar"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:textSize="15dp"
+                        android:textStyle="bold">
+                    </TextView>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/first"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"/>
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/profile_img"
+                        android:textColor="#000"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp"
+                        android:maxLines="1"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/showscore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/profile_img"
+                        android:layout_below="@+id/username"
+                        android:textColor="#000"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp"
+                        android:maxLines="1"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:weightSum="2"
+                        android:layout_alignParentEnd="true">
+
+                        <ImageView
+                            android:layout_weight="2"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/coin"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp">
+                        </ImageView>
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/coin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0 COIN"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:textColor="#000"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="20dp">
+                        </TextView>
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="4">
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:id="@+id/image"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/logogame">
+            </ImageView>
+
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_weight="1"
+                    android:layout_width="220dp"
+                    android:layout_height="125dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/play_bg">
+                </pl.droidsonroids.gif.GifImageView>
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/btn_play"
+                    android:layout_width="240dp"
+                    android:layout_height="135dp"
+                    android:scaleType="fitXY"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/play">
+                </pl.droidsonroids.gif.GifImageView>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/btn_logout"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:scaleType="fitXY"
+                android:text="Log Out"
+                android:src="@drawable/logout">
+            </ImageView>
+
+            <RelativeLayout
+                android:background="@drawable/music_text_bg"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    android:layout_gravity="center"
+                    android:id="@+id/revmusic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:id="@+id/current_music_text"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:text="♫ Current Music ♫"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:id="@+id/current_music"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                    </TextView>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginStart="5dp"
+            android:id="@+id/rev_main"
+            android:layout_below="@id/main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:padding="5dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/lovecircle">
+            </ImageView>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/love"
+                android:padding="10dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/lovegif">
+            </pl.droidsonroids.gif.GifImageView>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_centerInParent="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/touch">
+            </pl.droidsonroids.gif.GifImageView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
